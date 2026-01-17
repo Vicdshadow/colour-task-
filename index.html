@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChromaGen | Random Color Palette</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="controls">
+      <div class="logo">ChromaGen</div>
+      <div class="actions">
+        <div class="harmony-select">
+          <label for="harmony">Harmony:</label>
+          <select id="harmony">
+            <option value="random">Random</option>
+            <option value="analogous">Analogous</option>
+            <option value="monochromatic">Monochromatic</option>
+            <option value="triadic">Triadic</option>
+            <option value="complementary">Complementary</option>
+            <option value="split-complementary">Split Complementary</option>
+          </select>
+        </div>
+        <button id="generate-btn" class="btn-generate">
+          <i class="fa-solid fa-rotate"></i> Generate
+        </button>
+      </div>
+      <div class="hint">Press Spacebar</div>
+    </div>
+
+    <div class="palette-container" id="palette-container">
+      <!-- Columns will be injected here by JS -->
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
